@@ -1,20 +1,32 @@
 # Full stack Start Kit
 
 #### Features
-* Webpack enabled with Hot Reloader
-* Webpack configured for ES5 & ES2015
-* Webpack allows for multiple entry points
+* Node
+* React
+* Webpack
+- enabled with Hot Reloader
+- configured for ES5 & ES2015
+- allows for multiple entry points
 * Passport Authentication
-* MongoDB and MongoURI allows for easy push to Heroku
-* Node app configured to standards of Express Generator
+* MongoDB and MongoURI
+- Ready for Heroku..just push and add `addon` Mongo Lab
 * EJS Templating Engine
-* Bootstrap
+* Bootstrap Framework
 * ESLinter following AirBNB Style guide, also allows for ES2015 linting.
+* Extra NPM Packages I use frequently
+- Axios
+- Babel
+- SuperAgent
+- dotEnv
+- mongoose
+- ReactDOM
+- Redux
+- ...and more
 
 #### Directions
 * Clone Repository
-* NPM Install
+* cd into repo & `NPM Install`
 * Enter the name of the db in `config/db` 
-* NPM Run Build (make sure mongo is running)
-* Go to `localhost:3333`
-* Add awesome stuff and make a pull request!
+* `NPM Run Build` (make sure mongo is running)
+* fire up `localhost:3333`
+* Add awesome features and submit a pull request!
