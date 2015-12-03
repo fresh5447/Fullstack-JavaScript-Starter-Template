@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <%- include ./partials/header.ejs %>
+  <body>
+    <%- include ./partials/navbar.ejs %>
+
+       <ul class="nav nav-pills nav-stacked left-menu" id="stacked-menu">
+        <li>
+          <a href="#" data-target="#item1" data-toggle="collapse" data-parent="#stacked-menu">Menu<span class="caret arrow"></span></a>
+          <ul class="nav nav-stacked collapse left-submenu" id="item1">
+            <li><a href="/teamnews">Team News</a></li>
+            <li><a href="/fanzone">Fan Zone</a></li>
+            <li><a href="/gamezone">Game Zone</a></li>
+            <li><a href="/settings">Settings</a></li>
+          </ul>
+        </li>
+      </ul>
+
+    <%- include ./partials/footer.ejs %>
+
+  </body>
+</html>

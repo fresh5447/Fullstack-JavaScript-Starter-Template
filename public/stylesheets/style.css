@@ -3,6 +3,40 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+
 a {
   color: #00B7FF;
+}
+
+.twitter-container {
+    border: solid 3px;
+    height: 100%;
+    width: 100%;
+    margin-left: 10%;
+}
+
+.tweet-box {
+    border: 2px blue solid;
+    margin: 5px;
+    padding: 5px;
+}
+
+.user-row {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+
+.user-tweet {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.user-retweet li {
+  margin-left: 15%;
+  margin-right: 10%;
+  list-style: none;
+  display: inline;
+  text-align: center;
 }

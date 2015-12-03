@@ -5,7 +5,7 @@
   "scripts": {
     "clean": "rimraf static",
     "build:webpack": "NODE_ENV=production webpack --config webpack.config.prod.js",
-    "build": "npm run clean && npm run build:webpack && node ./bin/www",
+    "build": "npm run clean && npm run build:webpack && nodemon ./bin/www",
     "start": "node ./bin/www",
     "lint": "eslint client config models routes app.js || true"
   },

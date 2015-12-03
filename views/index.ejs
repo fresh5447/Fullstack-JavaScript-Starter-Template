@@ -1,21 +1,52 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
+    <%- include ./partials/header.ejs %>
   <body>
     <%- include ./partials/navbar.ejs %>
-    <h3><%= title %> Rendering</h3>
-	<span id="HelloWorld"></span>
-	<span id="AnotherExample"></span>
-	<h3>eslinter modeled after AirBNB style guide & handles ES2015</h3>
-	<h3>MongoDB configured to user Mongo URI, which will allow easy push to Heroku</h3>
-  <span id="ES"></span>
+    <div class="jumbotron">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1>NFL Sunday Twitter</h1>
+      </div> 
+    </div>
+      <div class="row">
+        <div class="col-sm-6"><img src="./img/search.png" class="thumbnail" alt=""></div>
+        <div class="col-sm-6"><p>Follow your favorite team like never before. See what your favorite players are tweeting about. Get in the action on game day and trash talk your face off.</p></div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <button type="button" class="btn btn-default">Signup</button>
+        </div>
+        <div class="col-sm-6">
+          <button type="button" class="btn btn-default">SignIn</button>
+        </div>
+      </div>
+    </div>
 
-	<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-	<script src="./static/main.js"></script>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6"><img src="./img/search.png" class="thumbnail" alt=""></div>
+          <div class="col-md-6">Follow Your Team</div>
+        </div>
+        <div class="row">
+        <div class="col-md-6">Follow the action by Game</div>
+          <div class="col-md-6"><img src="./img/search.png" class="thumbnail" alt=""></div>
+        </div>
+        <div class="row">
+        <div class="col-md-6"><img src="./img/search.png" class="thumbnail" alt=""></div>
+        <div class="col-md-6">Get All the news!</div>
+        </div>
+      </div>
+    </section>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12"><h3>Become a super fan</h3></div>
+    </div>
+  </div>
+</section>
+    <%- include ./partials/footer.ejs %>
+
   </body>
 </html>

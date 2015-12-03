@@ -37,11 +37,35 @@ module.exports = function(app, passport) {
         });
     });
 
-	app.get('/profile', isLoggedIn, function(req, res) {
-		res.render('profile.ejs', {
+	app.get('/dashboard', isLoggedIn, function(req, res) {
+		res.render('dashboard.ejs', {
 			user : req.user // get the user out of session and pass to template
 		});
 	});
+
+    app.get('/teamnews', isLoggedIn, function(req, res) {
+        res.render('teamnews.ejs', {
+            user : req.user // get the user out of session and pass to template
+        });
+    });
+
+    app.get('/gamezone', isLoggedIn, function(req, res) {
+        res.render('gamezone.ejs', {
+            user : req.user // get the user out of session and pass to template
+        });
+    });
+
+    app.get('/fanzone', isLoggedIn, function(req, res) {
+        res.render('fanzone.ejs', {
+            user : req.user // get the user out of session and pass to template
+        });
+    });
+
+    app.get('/settings', isLoggedIn, function(req, res) {
+        res.render('settings.ejs', {
+            user : req.user // get the user out of session and pass to template
+        });
+    });
 
 
     app.get('/logout', function(req, res) {
